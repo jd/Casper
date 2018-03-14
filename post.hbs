@@ -114,11 +114,17 @@ into the {body} of the default.hbs template --}}
                 {{> subscribe-form}}
             {{/if}}
 
-            {{!--
             <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://jdanjou.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
             </section>
-            --}}
 
         </article>
 
