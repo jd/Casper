@@ -120,9 +120,15 @@ into the {body} of the default.hbs template --}}
               <script async id="_ck_40222" src="https://forms.convertkit.com/40222?v=7"></script>
             {{/has}}
 
+            {{#has tag="postgresql"}}
+            <a href="https://jdanjou--theartofpostgresql.thrivecart.com/full-edition/?ref=blog-footer">
+              <img src="{{asset "taopg-cta.jpg"}}">
+            </a>
+            {{else}}
             <a href="http://scaling-python.com">
               <img src="{{asset "scapy-cta.jpg"}}">
             </a>
+            {{/has}}
 
             <section class="post-full-comments">
                 <div id="disqus_thread"></div>
